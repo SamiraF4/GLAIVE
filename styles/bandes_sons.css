@@ -1,0 +1,228 @@
+html{
+  background-color:#0E0E0E;
+  color:white;
+}
+
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+header{
+  background-color: #0E0E0E;
+  padding: 10px 20px 0px 20px;
+  display: block;
+  transition-duration: 1s;
+}
+
+section{
+  height: 1000px;
+}
+
+h1{
+  font-family: Impact;
+  font-size: 450%;
+  background-image: url("../images/barre.png");
+  background-size: 650px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-shadow:#0E0E0E 4px 4px,#0E0E0E -4px 4px,#0E0E0E -4px -4px,#0E0E0E 4px -4px;
+  margin: 0px 0px 20px 0px;
+}
+
+h2{
+  font-size: 400%;
+  font-family: Impact;
+  text-shadow:#0A0A0A 6px 6px,#0A0A0A -6px 6px,#0A0A0A -6px -6px,#0A0A0A 6px -6px;
+}
+
+
+p{
+  font-family: Gill Sans, sans-serif;
+  font-size: 18px;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+td{
+  padding: 40px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* animation des perso par des slides fondu */
+
+.animation_avatar{
+  padding: 0px;
+}
+
+/* perso du côté gauche */
+#avatar_td_1{
+  padding: 0px;
+  text-align: left;
+}
+
+#avatar_td_2{
+  padding: 0px;
+  text-align: left;
+}
+
+#avatar_1,#avatar_2{
+  margin:0px;
+  display: inline-block;
+  width: 100px;
+  height: 73px;
+  background-image: url("../images/animation_avatar/1_gauche.png");
+  background-repeat: no-repeat;
+  animation-name: diapo1;
+  animation-duration: 8s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes diapo1 {
+  0%{
+    background-image: url("../images/animation_avatar/1_gauche.png");
+  }
+  25%{
+    background-image: url("../images/animation_avatar/2_gauche.png");
+  }
+  50%{
+    background-image: url("../images/animation_avatar/3_gauche.png");
+  }
+  75%{
+    background-image: url("../images/animation_avatar/4_gauche.png");
+  }
+
+
+}
+
+/* perso côté droit */
+
+#avatar_td_3{
+  padding: 0px;
+  text-align: right;
+}
+
+#avatar_td_4{
+  padding: 0px;
+  text-align: right;
+}
+
+#avatar_3, #avatar_4{
+  margin:0px;
+  display: inline-block;
+  width: 100px;
+  height: 73px;
+  background-image: url("../images/animation_avatar/1_droite.png");
+  background-repeat: no-repeat;
+  animation-name: diapo;
+  animation-duration: 6s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes diapo {
+  0%{
+    background-image: url("../images/animation_avatar/1_droite.png");
+  }
+  33%{
+    background-image: url("../images/animation_avatar/2_droite.png");
+  }
+  66%{
+    background-image: url("../images/animation_avatar/3_droite.png");
+  }
+
+}
+
+/* tableau des bandes-sons */
+
+#sons{
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background-color: #191919;
+  padding: 20px 20px 20px 20px;
+  background-image: url(../images/epeeReduit.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center right;
+}
+
+/* --------------------------------------------------------------- */
+
+footer{
+  background-color: #0A0A0A;
+  margin: 0px;
+  width: 100%;
+  height: 540px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+/* "menu déroulant" pour linkedin */
+
+#contact > ul{
+  margin:0px;
+  padding: 0px;
+}
+
+#contact > ul :: after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact > ul > li{
+  float: center;
+  position: relative;
+}
+
+
+#contact li{
+  list-style-type:none;
+}
+
+.submenu{
+  display: none;
+}
+
+#contact a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+#contact li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 54%;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li{
+  border-bottom: 1px solid white;
+}
+
+.submenu li a{
+  padding: 5px 0px;
+  font-size: 13px;
+  width: 150px;
+  color: white;
+}
+
+/* remonter au début de la page */
+
+#fleche{
+  padding: 5px;
+}

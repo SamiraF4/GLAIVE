@@ -1,0 +1,516 @@
+html{
+  background-color:#0E0E0E;
+  color:white;
+}
+
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+header{
+  background-color: #0E0E0E;
+  padding: 10px 20px 0px 20px;
+  display: block;
+  transition-duration: 1s;
+}
+
+/* --------------------------------------------------------------- */
+
+/* "menu déroulant" pour connexion et inscription */
+
+
+nav > ul{
+  margin:0px;
+  padding: 0px;
+}
+
+nav > ul :: after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li{
+  float: right;
+  position: relative;
+}
+
+
+nav li{
+  list-style-type:none;
+}
+
+.submenu{
+  display: none;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 90%;
+  right: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li{
+  border-bottom: 1px solid white;
+}
+
+.submenu li a{
+  padding: 5px 0px;
+  font-size: 13px;
+  width: 150px;
+  color: white;
+}
+
+
+#logo, nav{
+  display: inline-block;
+}
+
+#logo{
+  width: 49%;
+}
+
+nav{
+  width: 49%;
+}
+
+/* --------------------------------------------------------------- */
+
+section{
+  height: 2300px;;
+}
+
+h1{
+  font-family: Impact;
+  font-size: 650%;
+  background-image: url("../images/barre.png");
+  background-size: 550px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-shadow:#0E0E0E 6px 6px,#0E0E0E -6px 6px,#0E0E0E -6px -6px,#0E0E0E 6px -6px;
+  margin: 10px 0px 50px 0px;
+}
+
+h2{
+  font-size: 400%;
+  font-family: Impact;
+  text-shadow:#0A0A0A 6px 6px,#0A0A0A -6px 6px,#0A0A0A -6px -6px,#0A0A0A 6px -6px;
+
+}
+
+h3{
+  font-family: Gill Sans, sans-serif;
+  font-size: 23px;
+  transition-duration: 1s;
+}
+
+h4{
+  font-size: 140%;
+  transition-duration: 1s;
+}
+
+h5{
+  font-size: 130%;
+  transition-duration: 1s;
+}
+
+p{
+  font-family: Gill Sans, sans-serif;
+  font-size: 18px;
+}
+
+table{
+  margin: 0px;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+
+td{
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#container{
+  margin: auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------- */
+
+/* animation des perso par des slides fondu */
+
+.animation_avatar{
+  padding: 0px;
+}
+
+/* perso du côté gauche */
+#avatar_td_1{
+  padding: 0px;
+  text-align: left;
+}
+
+#avatar_td_2{
+  padding: 0px;
+  text-align: left;
+}
+
+#avatar_1,#avatar_2{
+  margin:0px;
+  display: inline-block;
+  width: 100px;
+  height: 73px;
+  background-image: url("../images/animation_avatar/1_gauche.png");
+  background-repeat: no-repeat;
+  animation-name: diapo1;
+  animation-duration: 8s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes diapo1 {
+  0%{
+    background-image: url("../images/animation_avatar/1_gauche.png");
+  }
+  25%{
+    background-image: url("../images/animation_avatar/2_gauche.png");
+  }
+  50%{
+    background-image: url("../images/animation_avatar/3_gauche.png");
+  }
+  75%{
+    background-image: url("../images/animation_avatar/4_gauche.png");
+  }
+
+
+}
+
+/* perso côté droit */
+
+#avatar_td_3{
+  padding: 0px;
+  text-align: right;
+}
+
+#avatar_td_4{
+  padding: 0px;
+  text-align: right;
+}
+
+#avatar_3, #avatar_4{
+  margin:0px;
+  display: inline-block;
+  width: 100px;
+  height: 73px;
+  background-image: url("../images/animation_avatar/1_droite.png");
+  background-repeat: no-repeat;
+  animation-name: diapo;
+  animation-duration: 6s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes diapo {
+  0%{
+    background-image: url("../images/animation_avatar/1_droite.png");
+  }
+  33%{
+    background-image: url("../images/animation_avatar/2_droite.png");
+  }
+  66%{
+    background-image: url("../images/animation_avatar/3_droite.png");
+  }
+
+}
+
+/* description du jeu */
+
+#description{
+  width: 100%;
+  background-image: url("../images/epeeHorizontal.png");
+  background-size: 1150px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 460px;
+  padding: 20px 20px 20px 100px;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+  background-color: #191919;
+}
+
+#intro_res{
+  display: none;
+}
+
+#index_res{
+  display: none;
+}
+
+/* synopsis */
+
+#box_synopsis {
+  box-shadow: 22px 22px 2px 1px rgba(255, 255, 0, .7);
+  margin: 50px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 600px;
+  height: 375px;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+#box_synopsis:hover {
+  width: 800px;
+  height: 500px;
+}
+
+slide{
+  float: left;
+  padding: 0px;
+}
+
+
+#slides:hover{
+  width: calc(800px*10);
+  animation: glisse 60s infinite;
+  cursor: none;
+}
+
+#slider{
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@keyframes glisse {
+  0%{
+    transform: translateX(O);
+  }
+  10%{
+    transform: translateX(-800px);
+  }
+  20%{
+    transform: translateX(-1600px);
+  }
+  30%{
+    transform: translateX(-2400px);
+  }
+  40%{
+    transform: translateX(-3200px);
+  }
+  50%{
+    transform: translateX(-4000px);
+  }
+  60%{
+    transform: translateX(-4800px);
+  }
+  70%{
+    transform: translateX(-5600px);
+  }
+  80%{
+    transform: translateX(-6400px);
+  }
+  90%{
+    transform: translateX(-7200px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+/* phototheque */
+
+#box_phototheque{
+  box-shadow: 22px 22px 2px 1px rgba(255, 255, 0, .7);
+  margin: 50px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 450px;
+  height: 250px;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  float: right;
+  background-image: url("../images/imageFond.png");
+  text-align: center;
+  padding-top: 60px;
+}
+
+#box_phototheque:hover {
+  width: 600px;
+  height: 300px;
+}
+
+/* bandes_sons */
+
+#box_bandes_sons {
+  box-shadow: 22px 22px 2px 1px rgba(255, 255, 0, .7);
+  margin: 50px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 500px;
+  height: 250px;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  background-image: url("../images/musiqueFond.png");
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+#box_bandes_sons:hover {
+  width: 600px;
+  height: 280px;
+}
+
+/* --------------------------------------------------------------- */
+
+footer{
+  background-color: #0A0A0A;
+  margin: 0px;
+  width: 100%;
+  height: 570px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+/* "menu déroulant" pour linkedin */
+
+#contact > ul{
+  margin:0px;
+  padding: 0px;
+}
+
+#contact > ul :: after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact > ul > li{
+  float: center;
+  position: relative;
+}
+
+
+#contact li{
+  list-style-type:none;
+}
+
+.submenu{
+  display: none;
+}
+
+#contact a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+#contact li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 54%;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li{
+  border-bottom: 1px solid white;
+}
+
+.submenu li a{
+  padding: 5px 0px;
+  font-size: 13px;
+  width: 150px;
+  color: white;
+}
+
+/* remonter au début de la page */
+
+#fleche{
+  padding: 5px;
+}
+
+
+/* adaptatoin à l'écran */
+
+@media screen and (max-width: 1182px){
+
+  section{
+    height: 2800px;
+  }
+
+  header{
+    padding-bottom: 50px;
+    margin: 0px;
+  }
+
+  #intro{
+    display: none;
+  }
+
+  #index{
+    display: none;
+  }
+
+  #intro_res{
+    display: block;
+  }
+
+  #index_res{
+    display: block;
+    background-color:  #0E0E0E;
+  }
+
+
+  h1{
+    font-family: Impact;
+    font-size: 700%;
+    background-image: url("../images/barre.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    text-shadow:#0E0E0E 6px 6px,#0E0E0E -6px 6px,#0E0E0E -6px -6px,#0E0E0E 6px -6px;
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  table{
+    background-image: none;
+    height: auto;
+    padding-top: 20px;
+    background-color: #191919;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+  }
+
+  tr{
+    width: auto;
+  }
+
+
+}
